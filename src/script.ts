@@ -95,3 +95,41 @@
 // }
 
 // sayHello({ name: 'Ishat', age: 23 });
+
+// Function signatures
+
+// let add: (a: number, b: number) => number;
+
+// add = (a: number, b: number) => {
+//   console.log(a + b);
+//   return a + b;
+// };
+
+// add(10, 8);
+
+// let calculate: (a: number, b: number, c: string) => number; //signature
+
+// calculate = (a: number, b: number, c: string) => {
+//   if (c === 'add') {
+//     console.log(a + b);
+//     return a + b;
+//   } else {
+//     console.log(a - b);
+//     return a - b;
+//   }
+// };
+
+// calculate(10, 8, 'minus');
+
+// let userDetails: (
+//   id: number | string,
+//   user: { name: string; age: number }
+// ) => void; //signature
+
+// userDetails = (id: number | string, user: { name: string; age: number }) => {
+//   console.log(`Id: ${id} , My name is ${user.name} , ${user.age} years old`);
+// };
+
+// const obj = { name: 'Ishat', age: 23 };
+
+// userDetails(10, obj);
