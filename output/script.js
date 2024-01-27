@@ -47,3 +47,24 @@
 //   return a * b;
 // }
 // myFnc(2, 3);
+// tyep aliases
+// function userDetails(a: string | number, b: { name: string; age: number }) {
+//   console.log(
+//     `Id no ${a} , my details: My name is ${b.name} and I am ${b.age} years old`
+//   );
+// }
+// function sayHello(user: { name: string; age: number }) {
+//   console.log(`Hello ${user.age > 50 ? 'sir' : 'Mr'} ${user.name}`);
+// }
+// type stringOrNum = string | number;
+// type userInfo = { name: string; age: number };
+// function userDetails(id: stringOrNum, user: userInfo) {
+//   console.log(
+//     `Id: ${id} , my details: My name is ${user.name} and I am ${user.age} years old`
+//   );
+// }
+// userDetails(10, { name: 'Ishat', age: 23 });
+// function sayHello(user: userInfo) {
+//   console.log(`Hello ${user.age > 50 ? 'sir' : 'Mr'} ${user.name}`);
+// }
+// sayHello({ name: 'Ishat', age: 23 });
