@@ -15,10 +15,6 @@
 // let age: number = 23;
 // console.log(age);
 
-// function multiply(a: number, b: number) {
-//   return a * b;
-// }
-
 // console.log(multiply(9, 9));
 
 // let fruits: string[] = ['apple', 'banana', 'mango'];
@@ -61,3 +57,12 @@
 // };
 
 // console.log(a);
+
+// fuction type
+
+// function myFnc(a: number, b: number, c: any = 10): number {
+//   console.log(a * b * c);
+//   return a * b;
+// }
+
+// myFnc(2, 3);
