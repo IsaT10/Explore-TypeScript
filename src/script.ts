@@ -41,3 +41,23 @@
 // };
 
 // console.log(obj);
+
+// Dynamic Type
+
+// const arr: any[] = [];
+
+// arr.push('mango');
+// arr.push(20);
+// console.log(arr);
+
+// let a: {
+//   name: any;
+//   qount: any;
+// };
+
+// a = {
+//   name: 'mango',
+//   qount: 20,
+// };
+
+// console.log(a);
