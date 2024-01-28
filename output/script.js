@@ -96,21 +96,42 @@
 // const obj = { name: 'Ishat', age: 23 };
 // userDetails(10, obj);
 // --------------------------class
-class Player {
-    constructor(n, a, c) {
-        this.name = n;
-        this.age = a;
-        this.country = c;
-    }
-    play() {
-        return `${this.name} from ${this.country} is playing`;
-    }
-}
-const messi = new Player('Messi', 36, 'Argentina');
-const ronaldo = new Player('Ronaldo', 38, 'Portugal');
-console.log(messi);
-console.log(ronaldo);
-const playerArr = [];
-playerArr.push(messi);
-playerArr.push(ronaldo);
-console.log(playerArr);
+// class Player {
+//   name: string;
+//   age: number;
+//   country: string;
+//   constructor(n: string, a: number, c: string) {
+//     this.name = n;
+//     this.age = a;
+//     this.country = c;
+//   }
+//   play() {
+//     return `${this.name} from ${this.country} is playing`;
+//   }
+// }
+// const messi = new Player('Messi', 36, 'Argentina');
+// const ronaldo = new Player('Ronaldo', 38, 'Portugal');
+// console.log(messi);
+// console.log(ronaldo);
+// const playerArr: Player[] = [];
+// playerArr.push(messi);
+// playerArr.push(ronaldo);
+// console.log(playerArr);
+// ------------------------access modifier
+// class Player {
+//   private name: string;
+//   public age: number;
+//   readonly country: string;
+//   constructor(n: string, a: number, c: string) {
+//     this.name = n;
+//     this.age = a;
+//     this.country = c;
+//   }
+//   play() {
+//     return `${this.name} from ${this.country} is playing`;
+//   }
+// }
+// const messi = new Player('Messi', 36, 'Argentina');
+// const ronaldo = new Player('Ronaldo', 38, 'Portugal');
+// console.log(messi.country);
+// console.log(ronaldo);
