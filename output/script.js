@@ -5,7 +5,7 @@
 // console.log(multiply('sadsa', 9));
 // let fruits = ['apple', 'banana', 'mango'];
 // fruits.push(9)
-// explicit types
+// ----------------------------------explicit types
 // let myName: string = 'Ishat';
 // console.log(myName);
 // let age: number = 23;
@@ -27,7 +27,7 @@
 //   adult: true,
 // };
 // console.log(obj);
-// Dynamic Type
+// ----------------------------Dynamic Type
 // const arr: any[] = [];
 // arr.push('mango');
 // arr.push(20);
@@ -47,7 +47,7 @@
 //   return a * b;
 // }
 // myFnc(2, 3);
-// tyep aliases
+// ----------------------------tyep aliases
 // function userDetails(a: string | number, b: { name: string; age: number }) {
 //   console.log(
 //     `Id no ${a} , my details: My name is ${b.name} and I am ${b.age} years old`
@@ -68,7 +68,7 @@
 //   console.log(`Hello ${user.age > 50 ? 'sir' : 'Mr'} ${user.name}`);
 // }
 // sayHello({ name: 'Ishat', age: 23 });
-// Function signatures
+// --------------------------Function signatures
 // let add: (a: number, b: number) => number;
 // add = (a: number, b: number) => {
 //   console.log(a + b);
@@ -95,3 +95,22 @@
 // };
 // const obj = { name: 'Ishat', age: 23 };
 // userDetails(10, obj);
+// --------------------------class
+class Player {
+    constructor(n, a, c) {
+        this.name = n;
+        this.age = a;
+        this.country = c;
+    }
+    play() {
+        return `${this.name} from ${this.country} is playing`;
+    }
+}
+const messi = new Player('Messi', 36, 'Argentina');
+const ronaldo = new Player('Ronaldo', 38, 'Portugal');
+console.log(messi);
+console.log(ronaldo);
+const playerArr = [];
+playerArr.push(messi);
+playerArr.push(ronaldo);
+console.log(playerArr);
