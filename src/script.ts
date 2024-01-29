@@ -188,3 +188,13 @@
 
 // console.log(messi.country);
 // console.log(ronaldo);
+
+// ----------------------module system
+
+import { Player } from './classes/Player.js';
+
+const messi = new Player('Messi', 36, 'Argentina');
+const ronaldo = new Player('Ronaldo', 38, 'Portugal');
+
+console.log(messi.country);
+console.log(ronaldo);
