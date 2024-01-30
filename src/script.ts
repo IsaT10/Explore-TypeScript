@@ -193,8 +193,8 @@
 
 import { Player } from './classes/Player.js';
 
-const messi = new Player('Messi', 36, 'Argentina');
-const ronaldo = new Player('Ronaldo', 38, 'Portugal');
+const messi = new Player('Messi', 36, 'Argentina', 'drible');
+const ronaldo = new Player('Ronaldo', 38, 'Portugal', 'finishing');
 
 console.log(messi.country);
 console.log(ronaldo);
