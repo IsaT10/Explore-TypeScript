@@ -1,20 +1,22 @@
-export class Player {
-  private name: string;
-  public age: number;
-  readonly country: string;
-  readonly skill: string;
+import { IsPlayer } from '../interface/IsPlayer';
 
-  constructor(n: string, a: number, c: string, s: string) {
-    this.name = n;
-    this.age = a;
-    this.country = c;
-    this.skill = s;
-  }
+// export class Player {
+//   private name: string;
+//   public age: number;
+//   readonly country: string;
+//   readonly skill: string;
 
-  play() {
-    return `${this.name} from ${this.country} is playing`;
-  }
-}
+//   constructor(n: string, a: number, c: string, s: string) {
+//     this.name = n;
+//     this.age = a;
+//     this.country = c;
+//     this.skill = s;
+//   }
+
+//   play() {
+//     return `${this.name} from ${this.country} is playing`;
+//   }
+// }
 
 // iterface
 
@@ -27,6 +29,8 @@ export class Player {
 //   width: 10,
 //   height: 20,
 // });
+
+//---------------iterface
 
 interface OptionsRect {
   width: number;
@@ -44,3 +48,21 @@ drawRectangle({
   width: 10,
   height: 20,
 });
+
+export class Player implements IsPlayer {
+  public name: string;
+  public age: number;
+  readonly country: string;
+  readonly skill: string;
+
+  constructor(n: string, a: number, c: string, s: string) {
+    this.name = n;
+    this.age = a;
+    this.country = c;
+    this.skill = s;
+  }
+
+  play() {
+    return `${this.name} from ${this.country} is playing`;
+  }
+}

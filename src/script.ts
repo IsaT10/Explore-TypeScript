@@ -192,9 +192,19 @@
 // ----------------------module system
 
 import { Player } from './classes/Player.js';
+import { IsPlayer } from './interface/IsPlayer';
 
-const messi = new Player('Messi', 36, 'Argentina', 'drible');
-const ronaldo = new Player('Ronaldo', 38, 'Portugal', 'finishing');
+const messi = new Player('Messi', 36, 'Argentina', 'dribleling');
+let ronaldo: IsPlayer;
+
+ronaldo = new Player('Ronaldo', 38, 'Portugal', 'finishing');
 
 console.log(messi.country);
 console.log(ronaldo);
+
+const players: IsPlayer[] = [];
+
+players.push(messi);
+players.push(ronaldo);
+
+console.log(players);

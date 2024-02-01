@@ -136,7 +136,12 @@
 // console.log(ronaldo);
 // ----------------------module system
 import { Player } from './classes/Player.js';
-const messi = new Player('Messi', 36, 'Argentina');
-const ronaldo = new Player('Ronaldo', 38, 'Portugal');
+const messi = new Player('Messi', 36, 'Argentina', 'dribleling');
+let ronaldo;
+ronaldo = new Player('Ronaldo', 38, 'Portugal', 'finishing');
 console.log(messi.country);
 console.log(ronaldo);
+const players = [];
+players.push(messi);
+players.push(ronaldo);
+console.log(players);
